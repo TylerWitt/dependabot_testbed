@@ -9,7 +9,7 @@ registries:
   oban-private-repo:
     type: hex-repository
     repo: betterdoc
-    url: https://hexrepo.betterdoc.org
+    url: https://foo:bar@hexrepo.betterdoc.org
     auth-key: ${{ secrets.HEX_REPO_AUTH_KEY }}
     public-key-fingerprint: "SHA256:w9Qm2VfDiSbcN8dCUFPZqOP0HZfMqmnXAdUDBkkUkxk"
 
