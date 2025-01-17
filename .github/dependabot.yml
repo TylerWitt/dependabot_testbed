@@ -11,7 +11,7 @@ registries:
     repo: betterdoc
     url: https://hexrepo.betterdoc.org
     auth-key: ${{ secrets.HEX_REPO_AUTH_KEY }}
-    public-key-fingerprint: #{{ secrets.HEX_REPO_AUTH_KEY }}
+    public-key-fingerprint: ${{ secrets.HEX_REPO_AUTH_KEY }}
 
 updates:
   - package-ecosystem: "mix"
