@@ -4,20 +4,21 @@
 # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#configuration-options-for-private-registries
 
 version: 2
+
 registries:
-   betterdoc-hex-repository:
-     type: hex-repository
-     repo: betterdoc
-     url: https://hexrepo.betterdoc.org
-     auth-key: ${{ secrets.HEX_REPO_AUTH_KEY }}
-     auth_key: ${{ secrets.HEX_REPO_AUTH_KEY }}
-     public-key-fingerprint: ${{ secrets.HEX_REPO_PUBLIC_KEY_FINGERPRINT }}
-     public_key_fingerprint: ${{ secrets.HEX_REPO_PUBLIC_KEY_FINGERPRINT }}
+  oban-private-repo:
+    type: hex-repository
+    repo: oban
+    url: https://hexrepo.betterdoc.org
+    auth-key: ${{ secrets.HEX_REPO_AUTH_KEY }}
+    public-key-fingerprint: "SHA256:w9Qm2VfDiSbcN8dCUFPZqOP0HZfMqmnXAdUDBkkUkxk"
+
 updates:
   - package-ecosystem: "mix"
-    directory: "/" # Location of package manifests
-    insecure-external-code-execution: allow
+    directory: "/"
+    insecure-external-code-execution: "allow"
     registries:
-      - betterdoc-hex-repository
+      - oban-private-repo
     schedule:
-      interval: "weekly"
+      interval: "daily"
+
