@@ -6,11 +6,11 @@
 version: 2
 
 registries:
-  oban-private-repo:
+  betterdoc-private-repo:
     type: hex-repository
     repo: betterdoc
-    url: https://foo:bar@hexrepo.betterdoc.org
-    auth-key: ${{ secrets.HEX_REPO_AUTH_KEY }}
+    url: https://hexrepo.betterdoc.org
+    auth_key: "foo"
     public-key-fingerprint: "SHA256:w9Qm2VfDiSbcN8dCUFPZqOP0HZfMqmnXAdUDBkkUkxk"
 
 updates:
@@ -18,7 +18,7 @@ updates:
     directory: "/"
     insecure-external-code-execution: "allow"
     registries:
-      - oban-private-repo
+      - betterdoc-private-repo
     schedule:
       interval: "daily"
 
