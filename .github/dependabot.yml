@@ -6,18 +6,17 @@
 version: 2
 
 registries:
-  acmecorp-private-repo:
+  dependabot-private-repo:
     type: hex_repository
-    repo: acmecorp
-    url: https://webhook.site/d8ea1da7-8afc-4879-9998-65a3d765010f
-    auth_key: "1234"
+    repo: dependabot
+    url: "https://dependabot-private.fly.dev"
+    auth_key: d6fc2b6n6h7katic6vuq6k5e2csahcm4
 
 updates:
   - package-ecosystem: "mix"
     directory: "/"
     insecure-external-code-execution: "allow"
     registries:
-      - acmecorp-private-repo
+      - dependabot-private-repo
     schedule:
       interval: "daily"
-
