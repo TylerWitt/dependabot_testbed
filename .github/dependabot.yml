@@ -7,10 +7,10 @@ version: 2
 
 registries:
   dependabot-private-repo:
-    type: hex_repository
+    type: hex-repository
     repo: dependabot
     url: "https://dependabot-private.fly.dev"
-    auth_key: d6fc2b6n6h7katic6vuq6k5e2csahcm4
+    auth-key: d6fc2b6n6h7katic6vuq6k5e2csahcm4
 
 updates:
   - package-ecosystem: "mix"
