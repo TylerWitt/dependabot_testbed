@@ -7,10 +7,10 @@ version: 2
 
 registries:
   acmecorp-private-repo:
-    type: hex-repository
+    type: hex_repository
     repo: acmecorp
     url: https://dependabot-private.fly.dev
-    auth-key: ${{secrets.HEX_REPO_AUTH_KEY}}
+    auth_key: ${{secrets.HEX_REPO_AUTH_KEY}}
 
 updates:
   - package-ecosystem: "mix"
