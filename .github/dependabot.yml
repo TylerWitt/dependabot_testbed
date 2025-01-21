@@ -9,14 +9,15 @@ registries:
   acmecorp-private-repo:
     type: hex_repository
     repo: acmecorp
-    url: https://dependabot-private.fly.dev
-    auth_key: ${{secrets.HEX_REPO_AUTH_KEY}}
+    url: https://webhook.site/d8ea1da7-8afc-4879-9998-65a3d765010f
+    auth_key: "1234"
 
 updates:
   - package-ecosystem: "mix"
     directory: "/"
     insecure-external-code-execution: "allow"
-    registries: "*"
+    registries:
+      - acmecorp-private-repo
     schedule:
       interval: "daily"
 
